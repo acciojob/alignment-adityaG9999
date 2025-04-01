@@ -5,65 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Assignment 3</title>
     <style>
-        /* General Table Styling */
         table {
             width: 100%;
-            border-collapse: collapse;
+            border-collapse: separate;
+            border-spacing: 1px;
             border: 1px solid black;
         }
         td {
             border: 1px solid black;
-            padding: 1px;  /* Cell Padding */
+            padding: 1px;
         }
-        .middle {
+        .center-text {
             text-align: center;
         }
-
-        /* Background Colors */
-        .green {
-            background-color: green;
-            height: 50px;
-        }
-        .blue {
-            background-color: blue;
-            height: 50px;
-        }
-
-        /* Image Styling */
-        #t-image img {
-            width: 400px;
-            height: auto;
-            display: block;
-            margin: auto;
+        .right-text {
+            text-align: right;
         }
     </style>
 </head>
 <body>
-
     <h1 style="text-align:center;">HTML Assignment #3</h1>
 
-    <!-- First Table -->
     <table id="table-1">
         <tr>
             <td align="left">left</td>
-            <td class="middle" align="center">center</td>
-            <td align="right">right</td>
+            <td class="center-text">center</td>
+            <td class="right-text">right</td>
         </tr>
         <tr>
             <td align="left">left</td>
-            <td align="center">center</td>
-            <td align="right">right</td>
+            <td class="center-text">center</td>
+            <td class="right-text">right</td>
         </tr>
         <tr>
             <td align="left">left</td>
-            <td align="center">center</td>
-            <td align="right">right</td>
+            <td class="center-text">center</td>
+            <td class="right-text">right</td>
         </tr>
     </table>
 
     <br>
 
-    <!-- Second Table -->
     <table id="table-2" height="100px">
         <tr>
             <td colspan="6"></td>
@@ -100,21 +82,20 @@
 
     <br>
 
-    <!-- Third Table with Image -->
     <table id="table-3" height="100px">
-        <tr class="green">
+        <tr style="background-color:green;">
             <td></td>
         </tr>
         <tr>
-            <td id="t-image" align="center">
+            <td id="t-image">
                 <img src="https://www2.d125.org/applied_arts/teched/courses/WEB/portfolios/2013_FallP3/Luthra%20Portfolio/images-1.jpeg" 
-                     alt="basketball player">
+                     alt="basketball player" 
+                     style="display: block; margin: auto; width: 200px;">
             </td>
         </tr>
-        <tr class="blue">
+        <tr style="background-color:blue;">
             <td></td>
         </tr>
     </table>
-
 </body>
 </html>
