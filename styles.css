@@ -1,16 +1,13 @@
-/* Ensure all table cells have a solid black border */
 td {
   border: 1px solid rgb(0, 0, 0) !important;
-  padding: 1px; /* Ensures padding is also as expected */
-  box-sizing: border-box; /* Ensures padding does not affect dimensions */
+  padding: 1px !important;
+  box-sizing: border-box;
 }
 
-/* Ensure the entire table follows the same styling */
 table {
-  border-collapse: collapse; /* Ensures borders do not double up */
+  border-collapse: collapse !important;
 }
 
-/* Optional: Apply the same style to table headers */
 th {
   border: 1px solid rgb(0, 0, 0) !important;
 }
